@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id ="demo"></p>
+	<button >REVERSE DIGIT</button>
+	<input type="text" onfocus="blue()"placeholder="Enter Name"/>
+	<script type="text/javascript">
+	palndrome = (data)=>{
+	document.write(data)
+		start = 0
+		end= data.length - 1
+		result = true
+		while(end>start){
+			if(data[end]!=data[start]){
+				document.getElementById('demo').innerHTML = "NOT PALINDROME"
+			}
+			else{
+				document.getElementById('demo').innerHTML = "PALINDROME"
+			}
+			end--;
+			start++;
+		}
+		
+	}
+	var a ="ABCD"
+	palndrome(a)
+
+	var num = parseInt(1456)
+	rem = 0
+	rev = 0
+	while(num!=0){
+		rem = num % 10
+		rev = rev*10 + rem
+		num = parseInt(num/10)
+	}
+	document.write("<h2>"+rev+"</h2>")
+
+var a = parseInt(3)
+var temp = 1
+var sum = 1
+while (temp!=a+1){
+	sum = sum*temp
+	temp+=1
+}
+document.write('The Factorial'+a+"of"+sum)
+blue = () =>{
+
+document.querySelector('input').style.background = "blue"
+
+}
+
+</script>
+
+</body>
+</html>
